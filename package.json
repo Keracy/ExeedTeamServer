@@ -1,0 +1,27 @@
+{
+  "name": "project8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keracy/ExceedTeamWorkers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keracy/ExceedTeamWorkers/issues"
+  },
+  "homepage": "https://github.com/Keracy/ExceedTeamWorkers#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.24",
+    "nodemon": "^2.0.4"
+  }
+}
