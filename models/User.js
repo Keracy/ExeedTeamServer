@@ -1,18 +1,19 @@
 const mongoose = require("mongoose");
-
-const EmployeeSchema = mongoose.Schema({
-  id: {
-    type: Number,
-  },
-  name: {
+const UserSchema = mongoose.Schema({
+  username: {
     type: String,
     trim: true,
-    required: [true, "Enter a name"],
+    required: [true, "Enter a username"],
+  },
+  password: {
+    type: String,
+    trim: true,
+    required: [true, "Enter a password"],
   },
   phone: {
     type: String,
     trim: true,
-    required: [true, "Enter a phone"],
+    required: [true, "Enter a Phone"],
   },
   email: {
     type: String,
@@ -21,4 +22,4 @@ const EmployeeSchema = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Employees", EmployeeSchema);
+module.exports = mongoose.model("User", UserSchema);
