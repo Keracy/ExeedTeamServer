@@ -28,7 +28,6 @@ router.get("/", async (req, res) => {
 
 router.delete("/", async (req, res) => {
   try {
-    console.log(req.body);
     const project = await Project.findByIdAndRemove(req.body._id);
     res.status(200).send(project);
   } catch (err) {

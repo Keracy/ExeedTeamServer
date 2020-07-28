@@ -27,7 +27,6 @@ router.post("/", async (req, res) => {
     email: req.body.email,
   });
   try {
-    console.log(employee);
     if (!validateEmployee(req.body).error) {
       await employee.save();
       return res.status(200).send(employee);

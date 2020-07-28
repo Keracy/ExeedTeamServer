@@ -19,7 +19,6 @@ router.post("/register", async (req, res) => {
     email: email,
   });
   try {
-    console.log(validateRegister(req.body));
     if (!validateRegister(req.body).error) {
       await user.save();
       res.status(200).send(user);
