@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
   try {
     if (!validateEmployee(req.body).error) {
       await employee.save();
-      return res.status(200).send(employee);
+      res.status(200).send(employee);
     } else {
       res.send(validateEmployee(req.body).error.details[0].message);
     }
